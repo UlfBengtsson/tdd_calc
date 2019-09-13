@@ -129,6 +129,21 @@ public class MyCalcTest
         //Assert
         assertEquals( 45, result , 0);
     }
+
+    @Test
+    public void additionVarArgs()
+    {
+        //Arrange
+        double number1 = 3.3;
+        double number2 = 3.3;
+        double number3 = 3.3;
+
+        //Act
+        double result = MyCalc.addition(number1, number2, number3);
+
+        //Assert
+        assertEquals( 9.9, result , 1);
+    }
     //------------------------------------------------
 
     @Test

@@ -2,14 +2,6 @@ package se.lexicon.ulf.models;
 
 public class MyCalc {
 
-    public static double addition(double numberA, double numberB) {
-        return numberA + numberB;
-    }
-
-    public static double subtraction(double numberA, double numberB) {
-        return numberA - numberB;
-    }
-
     public static double multiplication(double numberA, double numberB) {
         return numberA * numberB;
     }
@@ -18,7 +10,7 @@ public class MyCalc {
         return numberA / numberB;
     }
 
-    public static double addition(double[] numbers) {
+    public static double addition(double... numbers) {  //double... = VarArgs Req: last input parameter
 
         double sum = 0;
 
@@ -30,7 +22,7 @@ public class MyCalc {
         return sum;
     }
 
-    public static double subtraction(double[] numbers) {
+    public static double subtraction(double... numbers) {
 
         if (numbers.length == 0)
         {
