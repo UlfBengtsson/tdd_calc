@@ -254,6 +254,21 @@ public class MyCalcTest
         assertEquals( -43, result , 0);
     }
 
+    @Test
+    public void SubtractionVarArgs()
+    {
+        //Arrange
+        double number1 = 3.3;
+        double number2 = 3.3;
+        double number3 = 3.3;
+
+        //Act
+        double result = MyCalc.subtraction(number1, number2, number3);
+
+        //Assert
+        assertEquals( -3.3, result , 0);
+    }
+
     //------------------------------------------------------------------
 
     @Test
